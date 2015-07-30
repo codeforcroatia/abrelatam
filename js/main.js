@@ -2,8 +2,8 @@
     "use strict";
 
     ///////////////////////////////////////////////////// Your
-    var venueAddress = "Liber Bernardo O'Higgins 227, Santiago"; // Venue
-    var placeName = "Centro Gabriela Mistral";
+    var venueAddress = "Luigija Montija 2, Rovinj"; // Venue
+    var placeName = "Centar M.A.R.E";
     /////////////////////////////////////////////////// Adress
 
     var fn = {
