@@ -1,12 +1,12 @@
 # site settings
-title: Abrelatam 2015
-# email: info@ciudadanointeligente.org
-description: "Un encuentro abierto, por una región abierta. 7 y 8 de septiembre, Santiago de Chile"
-baseurl: "http://2015.abrelatam.org/"
-# "http://abrelatam.org"
-twitter_username: abrelatam
-github_username:  ciudadanointeligente
-analytics: 'UA-60198109-1'
+title: Open Data Boot Camp 2015
+# email: hi@codeforcroatia.org
+description: "Open Data Boot Camp is a youth camp focusing on use and reuse of public sector information organized by the Council for the OGP in Croatia."
+baseurl: "http://odbc.codeforcroatia.org/"
+# "http://codeforcroatia.org"
+twitter_username: codeforcroatia
+github_username:  codeforcroatia
+analytics: 'UA-60198109-x'
 
 # build settings
 markdown: kramdown
