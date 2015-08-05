@@ -201,7 +201,8 @@
           getmaxzoom: false,
           getelevation: false,
           streetviewpanorama: false,
-          getaddress: true
+          getaddress: true,
+          scrollwheel: false
         },
         geoloc:{
           getgeoloc: true
