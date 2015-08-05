@@ -201,8 +201,7 @@
           getmaxzoom: false,
           getelevation: false,
           streetviewpanorama: false,
-          getaddress: true,
-          scrollwheel: false
+          getaddress: true
         },
         geoloc:{
           getgeoloc: true
@@ -1604,6 +1603,12 @@
       }
     }
      
+     map.setOptions({'scrollwheel': false});
+
+     map.set('scrollwheel', false);
+      var isScrollWheelEnabled = map.get('scrollwheel');
+
+
     /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
     => function with latLng resolution
     = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
