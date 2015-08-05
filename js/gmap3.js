@@ -1602,11 +1602,6 @@
         map = new defaults.classes.Map($this.get(0), opts);
       }
     }
-     
-     map.setOptions({'scrollwheel': false});
-
-     map.set('scrollwheel', false);
-      var isScrollWheelEnabled = map.get('scrollwheel');
 
 
     /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
