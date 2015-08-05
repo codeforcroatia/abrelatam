@@ -1585,6 +1585,38 @@
     }
     
     /**
+     * disable map movement
+     **/
+
+  function disableMovement(disable) {
+    var mapOptions;
+    if (disable) {
+        mapOptions = {
+            draggable: false,
+            scrollwheel: false,
+            disableDoubleClickZoom: true,
+            zoomControl: false
+        };
+    } else {
+        mapOptions = {
+            draggable: true,
+            scrollwheel: true,
+            disableDoubleClickZoom: false,
+            zoomControl: true
+        };
+    }
+    map.setOptions(mapOptions);
+  }
+
+    google.maps.event.addListener(marker, 'dragstart', function() {
+      disableMovement(true);
+    });
+
+    google.maps.event.addListener(marker, 'dragend', function() {
+      disableMovement(false);
+    });
+
+    /**
      * initialize the map if not yet initialized
      **/
     function newMap(latLng, args){
