@@ -1,7 +1,7 @@
 # site settings
-title: Open Data Boot Camp 2015
+title: Open Data Youth Camp 2015
 # email: hi@codeforcroatia.org
-description: "Open Data Boot Camp is a youth camp focusing on use and reuse of public sector information organized by the Council for the OGP in Croatia."
+description: "Open Data Youth Camp is a OGP youth camp focusing on use and reuse of public sector information organized by the Council for the OGP in Croatia."
 baseurl: "http://dev.codeforcroatia.org/odbc"
 # "http://codeforcroatia.org"
 twitter_username: codeforcroatia
