@@ -32,4 +32,27 @@
 
     <script src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script src="js/jquery-2.1.0.min.js"></script>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["geochart"]});
+      google.setOnLoadCallback(drawRegionsMap);
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['Country',   'Participants'],
+          ['Bulgaria', 1], ['Croatia', 11], ['France', 3], ['Serbia', 3],
+          ['United Kingdom', 4]
+        ]);
+
+        var options = {
+          region: '150', // Europe
+        };
+
+        var chart = new google.visualization.GeoChart(document.getElementById('geochart-colors'));
+        chart.draw(data, options);
+      };
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="http://visapi-gadgets.googlecode.com/svn/trunk/pilesofmoney/pom.css"/>
+    <script type="text/javascript" src="http://visapi-gadgets.googlecode.com/svn/trunk/pilesofmoney/pom.js"></script>
 </head>
