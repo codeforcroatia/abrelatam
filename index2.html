@@ -406,7 +406,7 @@ layout: default
 					<div class="col-md-12 col-sm-12">
 						<div class="section-header text-center">
 							<h2>Results 1</h2>
-							<h4>
+							<center>
 							<div id="chartdiv"></div>
     <script type="text/javascript">
       google.load("visualization", "1");
@@ -421,18 +421,18 @@ layout: default
         data.setCell(1, 0, 'Germany');
         data.setCell(2, 0, 'USA');
         data.setCell(3, 0, 'Poland');
-        data.setCell(0, 1, 10, '$10,000');
-        data.setCell(1, 1, 30, '$30,000');
-        data.setCell(2, 1, 20, '$20,000');
-        data.setCell(3, 1, 7.5, '$7,500');
+        data.setCell(0, 1, 31, '31.12%');
+        data.setCell(1, 1, 18, '18.64%');
+        data.setCell(2, 1, 19, '19%');
+        data.setCell(3, 1, 31, '31.24%');
         var chartDiv = document.getElementById('chartdiv');
-        var options = {title: 'Reveneues By Country'};
+        var options = {title: 'Budget share'};
         chart = new PilesOfMoney(chartDiv);
         chart.draw(data, options);
         //google.visualization.events.addListener(chart, 'select', handleSelect);
       }
     </script>
-    </h4>
+    </center>
 						</div>
 						
 						<div class="text-width">
@@ -460,12 +460,12 @@ layout: default
         data.setCell(1, 0, 'Germany');
         data.setCell(2, 0, 'USA');
         data.setCell(3, 0, 'Poland');
-        data.setCell(0, 1, 10, '$10,000');
-        data.setCell(1, 1, 30, '$30,000');
-        data.setCell(2, 1, 20, '$20,000');
-        data.setCell(3, 1, 7.5, '$7,500');
+        data.setCell(0, 1, 23, '23.8%');
+        data.setCell(1, 1, 20, '20%');
+        data.setCell(2, 1, 22, '24%');
+        data.setCell(3, 1, 33, '32%');
         var chartDiv = document.getElementById('chartdiv');
-        var options = {title: 'Reveneues By Country'};
+        var options = {title: 'Budget share'};
         chart = new PilesOfMoney(chartDiv);
         chart.draw(data, options);
         //google.visualization.events.addListener(chart, 'select', handleSelect);
@@ -478,6 +478,23 @@ layout: default
 						</div>
 					</div>
 				</section>
+
+
+				<section id="news" class="row">
+					<div class="col-md-12 col-sm-12">
+						<div class="section-header text-center">
+							<h2>Results 2</h2>
+							<center>
+							<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1LxKw6EDr-ckmCymRSQ3TpM1d1Veu9oPzMPpF5_z9u9A/pubchart?oid=2131147678&amp;format=interactive"></iframe>	
+							</center>
+						</div>
+						
+						<div class="text-width">
+
+						</div>
+					</div>
+				</section>
+
 
 				<section id="news" class="row">
 					<div class="col-md-12 col-sm-12">
