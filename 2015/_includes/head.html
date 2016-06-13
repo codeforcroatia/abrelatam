@@ -1,0 +1,60 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- OGP -->
+    <meta property="og:title" content="{{ site.title }}" />
+    <meta property="og:description" content="{{ site.description }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ site.baseurl }}" />
+    <meta property="og:image" content="{{ site.baseurl }}/images/odbc-profile-gr.png" />
+
+    <!-- twitter card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="{{ site.twitter_username }}">
+    <meta name="twitter:title" content="{{ site.title }}">
+    <meta name="twitter:description" content="{{ site.description }}">
+    <meta name="twitter:creator" content="{{ site.twitter_username }}">
+    <meta name="twitter:image" content="{{ site.baseurl }}/images/odbc-profile-gr.png">
+    
+    <!--== CSS Files ==-->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link href="css/animate.min.css" rel="stylesheet" media="screen">
+    <link href="css/font-awesome.css" rel="stylesheet" media="screen">
+    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+    <link href="css/flexslider.css" rel="stylesheet" media="screen">
+    <link href="css/fancySelect.css" rel="stylesheet" media="screen">
+    <link href="css/responsive.css" rel="stylesheet" media="screen">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!--== Google Fonts ==-->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
+
+    <script src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="js/jquery-2.1.0.min.js"></script>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["geochart"]});
+      google.setOnLoadCallback(drawRegionsMap);
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['Country',   'Participants'],
+          ['Bosnia and Herzegovina', 1], ['Bulgaria', 1], ['Croatia', 11], ['France', 3], ['Serbia', 3],
+          ['United Kingdom', 4]
+        ]);
+
+        var options = {
+          region: '150', // Europe
+        };
+
+        var chart = new google.visualization.GeoChart(document.getElementById('geochart-colors'));
+        chart.draw(data, options);
+      };
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="http://visapi-gadgets.googlecode.com/svn/trunk/pilesofmoney/pom.css"/>
+    <script type="text/javascript" src="http://visapi-gadgets.googlecode.com/svn/trunk/pilesofmoney/pom.js"></script>
+</head>
