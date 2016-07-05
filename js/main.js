@@ -2,8 +2,8 @@
     "use strict";
 
     ///////////////////////////////////////////////////// Your
-    var venueAddress = "Luigija Montija 2, Rovinj"; // Venue
-    var placeName = "Centar M.A.R.E";
+    var venueAddress = "Preradovićeva 28A, Pula"; // Venue
+    var placeName = "Pula";
     /////////////////////////////////////////////////// Adress
 
     var fn = {
