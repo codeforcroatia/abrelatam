@@ -5,8 +5,7 @@ date:   2016-09-03 12:00:00
 categories: blog
 ---
 
-Projects:
-http://codeforcroatia.org/projects?tag=event.open_youth_academy_2016
+Please read on following link detailed descriptions about each project teams made: [this are results of Open Youth Academy 2016](http://codeforcroatia.org/projects?tag=event.open_youth_academy_2016).
 
 ![Team ideas](https://image.freepik.com/free-vector/team-work-scribbles_23-2147500725.jpg)
 
