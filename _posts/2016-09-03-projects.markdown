@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Open Youth projects"
+date:   2016-09-03 12:00:00
+categories: blog
+---
+
+Projects:
+http://codeforcroatia.org/projects?tag=event.open_youth_academy_2016
+
+![Team ideas](https://image.freepik.com/free-vector/team-work-scribbles_23-2147500725.jpg)
+
+[Image designed by Freepik](http://www.freepik.com/free-vector/team-work-scribbles_759871.htm)
