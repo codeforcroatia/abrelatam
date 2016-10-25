@@ -47,10 +47,45 @@ $(function () {
     })
     // Initialize the Gallery as image carousel:
     blueimp.Gallery(carouselLinks, {
-      container: '#blueimp-image-carousel',
+      container: '#blueimp-imageORIGINAL-carousel',
       carousel: true
     })
   })
+
+  // Load Flickr user images:
+  $.getJSON("http://api.flickr.com/services/feeds/photoset.gne?set=72157629060741515&nsid=35213698@N08&lang=en-us&format=json&jsoncallback=?", function(data){  
+          var listItems = '';
+          var carouselLinks = [],
+              linksContainer = $('#links'),
+              baseUrl;
+          $('div.Desc').append(data.description);
+          $.each(data.items, function(i,item){
+//             <a href="images/banana.jpg" title="Banana">
+//                <img src="images/thumbnails/banana.jpg" alt="Banana">
+//             </a>
+        var value = item.media.m;
+        var valueBig = value.replace("m.jpg", "b.jpg");
+        var valueSmall = value.replace("m.jpg", "s.jpg");
+             listItems
+                 += '<a href="'+valueBig+'" data-gallery>'+
+                      '<img src="'+valueSmall+'" />'+
+                    '</a>';
+                    
+                    
+                    carouselLinks.push({
+                        href: valueBig,
+                        title: 'Random Images'
+                        });
+                    
+                    
+          });
+          $('div.links').append(listItems);
+          //initialize main slideshow viewer with flickr images.
+          blueimp.Gallery(carouselLinks, {
+              container: '#blueimp-image-carousel',
+              carousel: true
+          });
+      });  
 
   // Initialize the Gallery as video carousel:
   blueimp.Gallery([

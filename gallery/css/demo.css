@@ -13,11 +13,11 @@ body {
   max-width: 750px;
   margin: 0 auto;
   padding: 1em;
-  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   line-height: 1.4em;
-  background: #222;
-  color: #fff;
+  background: #efefef;
+  color: #222;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -30,7 +30,9 @@ img {
   vertical-align: middle;
 }
 h1 {
-  line-height: 1em;
+  font-family: 'Belgrano', serif;
+  line-height: 1.4em;
+  margin: 10px 0;
 }
 h2,
 .links {
