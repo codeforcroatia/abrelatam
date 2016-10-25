@@ -52,8 +52,8 @@ $(function () {
     })
   })
 
-  // Load Flickr user images:
-  $.getJSON("http://api.flickr.com/services/feeds/photoset.gne?set=72157629060741515&nsid=35213698@N08&lang=en-us&format=json&jsoncallback=?", function(data){  
+  // Load Flickr user foto album: https://www.flickr.com/photos/145312220@N05/albums/72157675599762696
+  $.getJSON("http://api.flickr.com/services/feeds/photoset.gne?set=72157675599762696&nsid=145312220@N05&lang=en-us&format=json&jsoncallback=?", function(data){  
           var listItems = '';
           var carouselLinks = [],
               linksContainer = $('#links'),
